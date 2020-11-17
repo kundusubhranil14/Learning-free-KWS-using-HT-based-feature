@@ -24,8 +24,6 @@ for searchWordIndex = 0:4
     reqCols = resizeCols(cols, noOfDiv, overlapColSize);
     searchImageResize = ...
         imresize(searchImageRectified, [rows reqCols], 'nearest'); 
-    %figure(1);
-    %imshow(searchImageResize);
     searchImageResizeNeg = 255 - searchImageResize;
     % path = 'C:\\Users\\pc\\Dropbox\\Summer 2019\\WordSearching\\Papers\\Self\\BW_25.jpg';
     % imwrite(searchImageResizeNeg,path,'JPG');
