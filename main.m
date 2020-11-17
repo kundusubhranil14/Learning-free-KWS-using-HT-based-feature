@@ -20,7 +20,7 @@ for searchWordIndex = 0:4
 % vertical zoning, with equal segments later on.
     [rows,cols] = size(searchImageRectified);
     noOfDiv = searchImageLetter;
-    overlapColSize = 10;
+    overlapColSize = 8;
     reqCols = resizeCols(cols, noOfDiv, overlapColSize);
     searchImageResize = ...
         imresize(searchImageRectified, [rows reqCols], 'nearest'); 
